@@ -25,15 +25,17 @@ const BlogPost = ({ page }) => {
   }, [page]);
 
   const handleScroll = () => {
-    const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
-    if (scrollTop + clientHeight >= scrollHeight) {
-      const nextPage = page + 1;
-      axios.get(`https://rickandmortyapi.com/api/character?page=${nextPage}`)
-        .then(response => {
-          const newCharacters = response.data.results;
-          setCharacters(prevCharacters => [...prevCharacters, ...newCharacters]);
-        })
-        .catch(error => console.error('Error fetching characters:', error));
+    if (containerRef.current) {
+      const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
+      if (scrollTop + clientHeight >= scrollHeight) {
+        const nextPage = page + 1;
+        axios.get(`https://rickandmortyapi.com/api/character?page=${nextPage}`)
+          .then(response => {
+            const newCharacters = response.data.results;
+            setCharacters(prevCharacters => [...prevCharacters, ...newCharacters]);
+          })
+          .catch(error => console.error('Error fetching characters:', error));
+      }
     }
   };
 
@@ -49,7 +51,7 @@ const BlogPost = ({ page }) => {
   }
 
   return (
-    <div className='container-card'>
+    <div className='container-card' ref={containerRef}>
       <h1>Characters</h1>
       <ul className='container'>
         {characters.map(character => (
