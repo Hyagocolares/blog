@@ -12,10 +12,10 @@ export default function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />}/>
-          <Route exact path="/contact" element={<Contact />}/>
-          <Route exact path="/about" element={<About />}/>
-          <Route path="/post/:id" element={<Post />}/>
+          <Route exact path="blog/" element={<Home />}/>
+          <Route exact path="blog/contact" element={<Contact />}/>
+          <Route exact path="blog/about" element={<About />}/>
+          <Route path="blog/post/:id" element={<Post />}/>
         </Routes>
       </BrowserRouter>
       <Footer/>
