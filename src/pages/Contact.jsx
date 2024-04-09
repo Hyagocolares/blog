@@ -11,7 +11,7 @@ const Contact = () => {
     honeypot: '',
     message: '',
     replyTo: '@',
-    accessKey: 'f2694ff6-d48a-4ca9-a58b-5f03ca085896',
+    accessKey: 'f2694ff6-d48a-4ca9-a58b-5f03ca085896'
   });
 
   const [response, setResponse] = useState({
