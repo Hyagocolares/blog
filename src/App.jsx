@@ -13,9 +13,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="blog/" element={<Home />}/>
-          <Route exact path="blog/contact" element={<Contact />}/>
-          <Route exact path="blog/about" element={<About />}/>
-          <Route path="blog/post/:id" element={<Post />}/>
+          <Route exact path="/blog/contact" element={<Contact />}/>
+          <Route exact path="/blog/about" element={<About />}/>
+          <Route path="/blog/post/:id" element={<Post />}/>
         </Routes>
       </BrowserRouter>
       <Footer/>
