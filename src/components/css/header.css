@@ -1,0 +1,49 @@
+/* src/components/css/header.css */
+
+/* Estilos para o componente Header */
+.header {
+    background-color: #1d1d1d; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Exibir em linha */
+    align-items: center; /* Alinhar itens verticalmente */
+  }
+  
+  .logo img {
+    width: 100px; /* Largura da imagem da logo */
+    height: auto; /* Altura ajustável para manter a proporção */
+    margin-right: 20px; /* Espaçamento à direita */
+  }
+  
+  .blog-title {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+  }
+  
+  /* Estilos para o componente Navbar */
+  nav {
+    background-color: #1d1d1d; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+  }
+  
+  ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; /* Exibir em linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+  }
+  
+  a {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+  }
+  
+  a:hover {
+    color: #00d1b2; /* Cor do texto ao passar o mouse */
+  }
+  

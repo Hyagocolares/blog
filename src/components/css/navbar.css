@@ -1,0 +1,26 @@
+nav {
+    background-color: #1d1d1d; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+  }
+  
+  ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; /* Exibir em linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+  }
+  
+  a {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+  }
+  
+  a:hover {
+    color: #00d1b2; /* Cor do texto ao passar o mouse */
+  }
+  

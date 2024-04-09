@@ -1,0 +1,79 @@
+.comment {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .comment p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .comment form {
+    margin-bottom: 20px;
+    display: flex; /* Adicionado para alinhar os elementos do formulário */
+    flex-wrap: wrap; /* Adicionado para quebrar a linha se necessário */
+  }
+  
+  .comment input,
+  .comment textarea {
+    flex: 1; /* Adicionado para que os elementos ocupem o mesmo espaço */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+  }
+  
+  .comment textarea {
+    height: 100px;
+    min-width: 100%;
+    resize: none; /* Impede o redimensionamento do textarea */
+  }
+  
+  
+  
+  .comment button {
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment button:hover {
+    background-color: #FF6347;
+  }
+  
+  .comment-list {
+    margin-top: 20px;
+  }
+  
+  .single-comment {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .single-comment p {
+    font-size: 16px;
+  }
+  
+  .comment-info {
+    font-size: 12px !important;
+    color: #888;
+  }
+  
+  .comment-container {
+    margin-top: 20px;
+  }
+  
+  /* Adicione esta regra para adicionar espaço entre os comentários e outros elementos */
+  .single-comment:last-child {
+    margin-bottom: 0; /* Remove a margem inferior do último comentário */
+  }
+  

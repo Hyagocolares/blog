@@ -1,0 +1,13 @@
+/* src/components/css/footer.css */
+
+footer {
+    background-color: #1d1d1d; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    position: fixed; /* Fixar o rodapé na parte inferior da página */
+    left: 0; /* Alinhar à esquerda */
+    bottom: 0; /* Alinhar na parte inferior */
+    width: 100%; /* Largura total */
+  }
+  
