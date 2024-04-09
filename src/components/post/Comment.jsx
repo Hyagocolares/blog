@@ -1,3 +1,5 @@
+// src/components/post/Comment.jsx
+
 import React, { useState } from 'react';
 import "./css/comment.css";
 
@@ -12,7 +14,7 @@ const Comment = () => {
       const newComment = {
         name: name || 'Usuário Anônimo',
         text: commentText,
-        date: new Date().toLocaleString() // Alterado para exibir a data e hora
+        date: new Date().toLocaleString()
       };
       setComments(prevComments => [...prevComments, newComment]);
       setName('');

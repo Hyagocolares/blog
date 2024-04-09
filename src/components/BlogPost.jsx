@@ -13,7 +13,7 @@ const BlogPost = ({ page }) => {
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
-        const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`); // Correção aqui
+        const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
         setCharacters(response.data.results);
         setLoading(false);
       } catch (error) {
@@ -53,7 +53,7 @@ const BlogPost = ({ page }) => {
       <h1>Characters</h1>
       <ul className='container'>
         {characters.map(character => (
-          <Link to={"/post/" + character.id} key={character.id}>
+          <Link to={"/blog/post/" + character.id} key={character.id}>
             <li className='caracterCard'>
               <article>
                 <figure className='caracterCard-img'>

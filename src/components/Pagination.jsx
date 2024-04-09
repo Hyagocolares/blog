@@ -1,5 +1,7 @@
 // src/components/Pagination.jsx
 
+import "./css/pagination.css"
+
 const Pagination = ({ prevPage, nextPage }) => {
   return (
     <div>
@@ -7,6 +9,6 @@ const Pagination = ({ prevPage, nextPage }) => {
       {nextPage && <button onClick={nextPage}>Next Page</button>}
     </div>
   );
-};
+}
 
 export default Pagination;

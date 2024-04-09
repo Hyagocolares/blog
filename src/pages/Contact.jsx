@@ -1,15 +1,17 @@
+// src/pages/Contact.jsx
+
 import { useState } from 'react';
-import './css/contact.css'; // Importação do arquivo CSS personalizado
+import './css/contact.css';
 
 const Contact = () => {
   const [contact, setContact] = useState({
     name: '',
     email: '',
-    subject: '', // Agora vamos deixar este campo vazio para ser preenchido pelo usuário
+    subject: '',
     honeypot: '',
     message: '',
     replyTo: '@',
-    accessKey: process.env.REACT_APP_ACCESS_KEY
+    accessKey: "f2694ff6-d48a-4ca9-a58b-5f03ca085896"
   });
 
   const [response, setResponse] = useState({
@@ -124,7 +126,6 @@ const Contact = () => {
                             <option value=''>Select Subject</option>
                             <option value='Contact'>Contact</option>
                             <option value='Suggestion'>Suggestion</option>
-                            {/* Adicione mais opções conforme necessário */}
                           </select>
                         </div>
                       </div>

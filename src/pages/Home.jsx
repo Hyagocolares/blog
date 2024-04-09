@@ -1,8 +1,10 @@
 // src/pages/Home.jsx
+
 import { useState } from 'react';
 
 import BlogPost from '../components/BlogPost';
 import Pagination from '../components/Pagination';
+import "./css/home.css"
 
 function Home() {
   const [currentPage, setCurrentPage] = useState(1);

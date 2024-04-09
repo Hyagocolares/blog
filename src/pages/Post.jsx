@@ -1,4 +1,5 @@
 // src/pages/Post.jsx
+
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./css/post.css";
@@ -56,7 +57,7 @@ export default function Post() {
         </div>
         <Side />
       </div>
-      <Comment/>
+      <Comment />
     </article>
   );
 }
